@@ -15,43 +15,31 @@ int main() {
 
     if (first_result == 'W')
         total = total + 1;
-    else
-        total = total;
     
     if (second_result == 'W')
         total = total + 1;
-    else
-        total = total;
 
     if (third_result == 'W')
         total = total + 1;
-    else
-        total = total;
 
     if (fourth_result == 'W')
         total = total + 1;
-    else
-        total = total;
 
     if (fifth_result == 'W')
         total = total + 1;
-    else
-        total = total;
 
     if (sixth_result == 'W')
         total = total + 1;
-    else
-        total = total;
     
 
-    if (total == 5 or total == 6)
+    if (total == 5 || total == 6)
         cout << 1 << endl;
-    else if (total == 3 or total == 4)
-             cout << 2 << endl; 
-        else if (total == 1 or total == 2)
-                 cout << 3 << endl; 
-             else  
-                 cout << -1 << endl;
+    else if (total == 3 || total == 4)
+        cout << 2 << endl; 
+    else if (total == 1 || total == 2)
+        cout << 3 << endl; 
+    else  
+        cout << -1 << endl;
 
     return 0;
 }
