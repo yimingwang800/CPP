@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     // 1 = Rock, 2 = Paper, 3 = Scissors
-    srand ( time (0));
+    srand ( time (0)); // generarte a new seed (so we can have a new random number)
     int my_input;
     int computer_input;
     cout << "Choose your input: 1 for Rock, 2 for Paper, 3 for Scissors" << endl;
