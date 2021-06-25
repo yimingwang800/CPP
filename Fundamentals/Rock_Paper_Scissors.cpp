@@ -13,33 +13,33 @@ int main() {
     cout << computer_input << endl;
 
     if (my_input == 1){ 
-    if (computer_input == 1) {
-       cout << "Tie" << endl;
-    } else if (computer_input == 2) {
-        cout << "Computer wins!" << endl;
-    } else if (computer_input == 3) {
-        cout << "I win!" << endl;
-    }
+        if (computer_input == 1) {
+            cout << "Tie" << endl;
+        } else if (computer_input == 2) {
+            cout << "Computer wins!" << endl;
+        } else if (computer_input == 3) {
+            cout << "I win!" << endl;
+        }
     }
 
     if (my_input == 2) {
-    if (computer_input == 1) {
-        cout << "I win!" << endl;
-    } else if (computer_input == 2) {
-        cout << "Tie" << endl;
-    } else if (computer_input == 3) {
-        cout << "Computer wins!" << endl;
-    }
+        if (computer_input == 1) {
+            cout << "I win!" << endl;
+        } else if (computer_input == 2) {
+            cout << "Tie" << endl;
+        } else if (computer_input == 3) {
+            cout << "Computer wins!" << endl;
+        }
     }
 
     if (my_input == 3) { 
-    if (computer_input == 1) {
-        cout << "Computer wins!" << endl;
-    } else if (computer_input == 2) {
-        cout << "I win!" << endl;
-    } else if (computer_input == 3) {
-        cout << "Tie" << endl;
-    }
+        if (computer_input == 1) {
+            cout << "Computer wins!" << endl;
+        } else if (computer_input == 2) {
+            cout << "I win!" << endl;
+        } else if (computer_input == 3) {
+            cout << "Tie" << endl;
+        }
     }
 
     return 0;
