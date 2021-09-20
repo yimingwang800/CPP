@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int a, b, c, sum;
+    int sum;
     cout << "Input a number between 6 and 100" << endl;
     cin >> sum;
     
