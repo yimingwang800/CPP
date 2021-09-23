@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-    int num_of_lines;
-    cin >> num_of_lines;
+    int lines;
+    cin >> lines;
     
-    for (int l=1; l<=num_of_lines; l++) {
-        int V1;
-        char V2;
-        cin >> V1 >> V2;
-        for (int ch=1; ch<=V1; ch++) {
-        cout << V2;        
-    }
+    for (int i = 1; i <= lines; i++) { // i, j, k, ... etc
+        int num;
+        char symbol;
+        cin >> num >> symbol;
+        for (int j = 1; j <= num; j++) {
+            cout << symbol;        
+        }
         cout << endl;
     }
     return 0;
