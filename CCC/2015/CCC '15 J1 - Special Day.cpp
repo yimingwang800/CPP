@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int month, day;
+    cin >> month >> day;
+    if (month > 2) {
+        cout << "After" << endl;
+    } else if (month < 2){
+        cout << "Before" << endl;
+    } else if (day > 18) {
+        cout << "After" << endl;
+    } else if (day < 18){
+        cout << "Before" << endl;
+    } else {
+        cout << "Special" << endl;
+    }
+    
+    return 0;
+}
