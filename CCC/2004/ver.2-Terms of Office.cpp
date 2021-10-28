@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int this_year, future_year, position_change_year;
-
-void position_switch() {
+void position_switch(int this_year, int future_year) {
+    int position_change_year;
     position_change_year = this_year;
     cout << "All positions change in year " << position_change_year << endl;
     while (position_change_year <= future_year - 60) {
@@ -13,7 +12,9 @@ void position_switch() {
 }
 
 int main() {
+    int this_year, future_year;
     cin >> this_year >> future_year;
-    position_switch();
+    position_switch(this_year, future_year);
+    
     return 0;
 }
