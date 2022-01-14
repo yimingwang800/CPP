@@ -15,8 +15,9 @@ int main() {
     // Access array element
     cout << fav_num[1] << endl;
 
-    sort(arr, arr + n); // Ascending Order
-    sort(arr, arr + n, greater<>());    // Descending Order
+    int n = sizeof(fav_num)/sizeof(fav_num[0]);
+    sort(fav_num, fav_num + n); // Ascending Order
+    sort(fav_num, fav_num + n, greater<>());    // Descending Order
 
 
     return 0;
