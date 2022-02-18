@@ -11,13 +11,6 @@ int main() {
         {' ', 'x', 'x'},
         {'*', ' ', '*'},
     };
-    
-    for (int i = 0; i < 3; i++ ) {
-        for (int j = 0; j < 3; j++ ) {
-            cout << icon_scalling[i][j] << " ";
-        } 
-        cout << endl;
-    }
 
     for (int i = 0; i < 1*k; i++ ) {
         for (int j = 0; j < 1*k; j++ ) {
