@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     string str = "abcde";
-
+ 
     cout << str[0] ;
     cout << str[1] ;
     cout << str[2] ;
@@ -38,6 +38,26 @@ int main() {
     // end() - An iterator to the last elemenr=t
     str.replace(str.begin(), str.end()-3, "Replace");
     cout << "After replace: " << str << endl;
+
+    string text = "Hello World";
+    auto found_idx = str.find("Wo");    // Return 6 to found_idx
+    //Return index where is "Wo" in "Hello World"
+    //npos (No Position) means "until the end of the string"
+    if (found_idx != string::npos){
+        cout << "Not found!" << endl;
+    } else {
+        cout << "Found at: " << found_idx << endl;
+    }
+
+    string letters = "defcba"; 
+    sort(str.begin(), str.end());
+    sort(str.begin(), str.begin()+3);
+    cout << str << endl;
+
+    //cin.ignore();
+    //getline(cin, string_name);
+    //cout << string_name;
+
 
     return 0;
 }

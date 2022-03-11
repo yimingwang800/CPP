@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int num_parking_space;
+    int num_occupied_both_days = 0;
+    string parking_yesterday;
+    string parking_today;
+    cin >> num_parking_space >> parking_yesterday >> parking_today;
+
+    for (int i = 0; i < num_parking_space; i++) {
+        if (parking_yesterday[i] == 'C' && parking_yesterday[i] == parking_today[i]) {
+            num_occupied_both_days++;
+        }
+    }
+
+    cout << num_occupied_both_days << endl;
+    
+    return 0;
+}
