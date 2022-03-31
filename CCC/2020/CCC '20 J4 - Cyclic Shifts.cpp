@@ -9,7 +9,8 @@ int main() {
     for (int i = 1; i <= int (string_input.length()); i++){
         string_input.push_back(string_input.front());
         string_input.erase(string_input.begin());
-        string_find = text_input.find(string_input)+1;
+        string_find = text_input.find(string_input);
+        string_find++;
         total_find = total_find + string_find;
     }
     
