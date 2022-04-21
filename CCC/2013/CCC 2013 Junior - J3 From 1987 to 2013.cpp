@@ -2,13 +2,17 @@
 using namespace std;
 
 int main() {
+
     int year;
     cin >> year;
-    set<int> year_set = {};
-    year_set.insert(year);
-    for (auto find = year_set.begin(); find != year_set.end(); find++) {
-        cout << *find << endl;
+    for (int i = year + 1; ; i++) {
+        string string_year = to_string(i);
+        set<int> year_set(string_year.begin(), string_year.end());
+
+        if (year_set.size() == string_year.size()){
+            cout << i << endl;
+            break;
+        }
     }
-    
     return 0;
 }
