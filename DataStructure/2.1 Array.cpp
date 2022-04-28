@@ -18,7 +18,8 @@ int main() {
     int n = sizeof(fav_num)/sizeof(fav_num[0]);
     sort(fav_num, fav_num + n); // Ascending Order
     sort(fav_num, fav_num + n, greater<>());    // Descending Order
-
+    cout << "Total memory size: " << sizeof(fav_num) << endl;
+    cout << "Number of elements: " << sizeof(fav_num)/sizeof(fav_num[0]) << endl;
 
     return 0;
 }
