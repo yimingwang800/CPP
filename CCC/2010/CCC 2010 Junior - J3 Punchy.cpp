@@ -33,22 +33,22 @@ int main() {
 
         if (operation == 3) {
             cin >> x >> y;
-            data[x] = data[x] + data[y];
+            data[x] += data[y];
         }
 
         if (operation == 4) {
             cin >> x >> y;
-            data[x] = data[x] * data[y];
+            data[x] *= data[y];
         }
 
         if (operation == 5) {
             cin >> x >> y;
-            data[x] = data[x] - data[y];
+            data[x] -= data[y];
         }
 
         if (operation == 6) {
             cin >> x >> y;
-            data[x] = data[x] / data[y];
+            data[x] /= data[y];
         }
 
         cin >> operation; 
