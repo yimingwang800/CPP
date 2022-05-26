@@ -4,7 +4,6 @@ using namespace std;
 int main() {
     string text;
     int time = 0;
-    int compare_value = 0;
     cin >> text;
     map <char, vector<int>> keys = {
         {'a', {1, 2}}, // keys['a'][1]
@@ -34,21 +33,97 @@ int main() {
         {'y', {3, 9}},
         {'z', {4, 9}}
     };
-
-    while(text != "halt"){
-        for (int i = 0; i < text.size(); i++ ) {
-            if (keys[text[i]] != compare_value) {
-                time += keys[text[i]];
-                cout << time << endl;
-                compare_value = keys[text[i]];
-            } else {
-                time += keys[text[i]] + 2;
-                compare_value = keys[text[i]];
-            }
-        } 
-        cin >> text;
-    }
-    cout << time << endl;
     
+    while(text != "halt"){
+            if (text[0] == 'a') {
+                time += keys['a'][0];
+            }
+            if (text[0] == 'b') {
+                time += keys['b'][0];
+            }
+            if (text[0] == 'c') {
+                time += keys['c'][0];
+            }
+            if (text[0] == 'd') {
+                time += keys['d'][0];
+            }
+            if (text[0] == 'e') {
+                time += keys['e'][0];
+            }
+            if (text[0] == 'f') {
+                time += keys['f'][0];
+            }
+            if (text[0] == 'g') {
+                time += keys['g'][0];
+            }
+            if (text[0] == 'h') {
+                time += keys['h'][0];
+            }
+            if (text[0] == 'i') {
+                time += keys['i'][0];
+            }
+            if (text[0] == 'j') {
+                time += keys['j'][0];
+            }
+            if (text[0] == 'k') {
+                time += keys['k'][0];
+            }
+            if (text[0] == 'l') {
+                time += keys['l'][0];
+            }
+            if (text[0] == 'm') {
+                time += keys['m'][0];
+            }
+            if (text[0] == 'n') {
+                time += keys['n'][0];
+            }
+            if (text[0] == 'o') {
+                time += keys['o'][0];
+            }
+            if (text[0] == 'p') {
+                time += keys['p'][0];
+            }
+            if (text[0] == 'q') {
+                time += keys['q'][0];
+            }
+            if (text[0] == 'r') {
+                time += keys['r'][0];
+            }
+            if (text[0] == 's') {
+                time += keys['s'][0];
+            }
+            if (text[0] == 't') {
+                time += keys['t'][0];
+            }
+            if (text[0] == 'u') {
+                time += keys['u'][0];
+            }
+            if (text[0] == 'v') {
+                time += keys['v'][0];
+            }
+            if (text[0] == 'w') {
+                time += keys['w'][0];
+            }
+            if (text[0] == 'x') {
+                time += keys['x'][0];
+            }
+            if (text[0] == 'y') {
+                time += keys['y'][0];
+            }
+            if (text[0] == 'z') {
+                time += keys['z'][0];
+            }
+
+        for (int i = 1; i < int(text.size()); i++ ) {
+            if (keys[text[i]][1] == keys[text[i-1]][1]) {                
+                time += keys[text[i]][0] + 2;
+            } else {
+                time += keys[text[i]][0];
+            }
+        }
+        cout << time << endl;
+        cin >> text;
+        time = 0;
+    }
     return 0;
 }
