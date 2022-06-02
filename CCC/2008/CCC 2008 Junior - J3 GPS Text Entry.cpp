@@ -44,4 +44,9 @@ int main() {
     steps += abs(keypad['enter'][0]-keypad[text[text.size()-1]][0]) + abs(keypad['enter'][1]-keypad[text[text.size()-1]][1]);
     cout << steps << endl;
     return 0;
+    //int previous_x = letter['A'][0];
+    //int previous_y = letter['A'][1];
+    //int current_x = letter[phrase[0][0]];
+    //int current_y = letter[phrase[0][0]];
+    //total_moves += abs(surrent_x - previous_x) + abs(current_y - previous_y);
 }
